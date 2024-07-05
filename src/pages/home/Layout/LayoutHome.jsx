@@ -28,7 +28,7 @@ const LayoutHome = () => {
   return (
     <div className={css.layout}>
       <Header/>
-      <div>
+      <div className={css.card_content}>
         {pokemonList.map((card, index) => {
           return <Card key={index} card={card}/>;
         })}

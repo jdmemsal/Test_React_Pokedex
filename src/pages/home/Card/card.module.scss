@@ -1,14 +1,27 @@
-.cards{
+.cards_container{
     width: 100%;
     height: 490px;
     display: flex;
     flex-direction: column;
     position: relative;
+    transition: all 0.3s ease-in-out;
 
+    &:hover{
+        transform: scale(1.05);
+        transition-duration: 200ms;
+        
+        > img{
+            margin-top: -20px;
+            transform: scale(1.15);
+            transition-duration: 300ms;
+            filter: drop-shadow(1px 3px 0px black);
+        }
+    }
     .img_pk{
         width: 160px;
         margin: 0 auto;
         z-index:20;
+        transition: all 0.3s ease-in-out;
     }
 
     .sub_cards{
@@ -54,7 +67,7 @@
         font-size: 0.75rem;
         text-transform: capitalize;
         display: block;
-        color: #484848;
+        color: black;
     }
 
     .weight_pk{
@@ -62,7 +75,7 @@
         font-size: 0.75rem;
         text-transform: capitalize;
         display: block;
-        color: #484848;
+        color: black;
     }
 
     .habitat_pk{
@@ -70,6 +83,54 @@
         font-size: 0.75rem;
         text-transform: capitalize;
         display: block;
-        color: #484848;
+        color: black;
+    }
+
+    .div_stats_container{
+        margin: 4px, 0;
+        width: 100%;
+        padding: 0px;
+        margin-top: 5px;
+
+        .att_stats{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .name_stat{
+            width: 120px;
+            text-transform: capitalize;
+            color: #484848;;
+        }
+        .value_stat{
+            width: 22px;
+            text-align: end;
+            color: #484848;
+        }
+    }
+
+    .div_type_container{
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin: 10px 0;
+
+        .div_type_name{
+            border: 1px solid #424242;
+            border-radius: 4px;
+            text-align: center;
+            height: 20px;
+            line-height: 17px;
+            width: 50px;
+            background-color: white;
+            text-transform: capitalize;
+        }
     }
 }
+
+/*
+
+
+
+
+*/

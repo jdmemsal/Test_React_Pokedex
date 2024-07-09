@@ -1,10 +1,11 @@
 .cards_container{
     width: 100%;
-    height: 490px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     position: relative;
     transition: all 0.3s ease-in-out;
+    margin-top: 50px;
 
     &:hover{
         transform: scale(1.05);
@@ -28,9 +29,10 @@
         position: absolute;
         border-radius: 10px;
         background-color: #f7d06e;
-        min-height: 370px;
+        min-height: 300px;
         padding: 15px;
         width: 100%;
+        min-width: 270px;
         margin-top: 100px;
         padding-top: 15px;
         border: 1px solid #42424242;
@@ -49,6 +51,7 @@
         padding: 1px 4px;
         font-size: 0.85rem;
         border-radius: 5px;
+        margin-top: 15px;
         display: inline-block;
     }
 
@@ -101,11 +104,13 @@
             width: 120px;
             text-transform: capitalize;
             color: #484848;;
+            font-size: 0.65rem;
         }
         .value_stat{
             width: 22px;
             text-align: end;
             color: #484848;
+            font-size: 0.65rem;
         }
     }
 
@@ -113,7 +118,7 @@
         display: flex;
         justify-content: center;
         gap: 15px;
-        margin: 10px 0;
+        margin-top: 25px;
 
         .div_type_name{
             border: 1px solid #424242;

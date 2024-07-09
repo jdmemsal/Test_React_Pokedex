@@ -20,7 +20,7 @@ const Card = ({card}) => {
         };
 
         fetchPokemon();
-    }, []);
+    }, [card]);
 
     
     useEffect(() => {
@@ -38,10 +38,9 @@ const Card = ({card}) => {
         };
 
         spPokemon();
-    }, []);
+    }, [card]);
 
-//console.log(pokeObject)
-//console.log(pkSpecie)
+
     return (
         <div className={css.cards_container}>
             {/* .sprites.other["official-artwork"].front_default
